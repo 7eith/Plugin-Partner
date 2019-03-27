@@ -1,5 +1,12 @@
 {
   "name":"Partner",
+  "admin_menus":{
+    "Youtubeurs":{
+      "icon":"youtube",
+      "index": "9",
+      "route":"#"
+    }
+  },
   "author":"Snkh",
   "version":"1.0.0",
   "useEvents":false,
