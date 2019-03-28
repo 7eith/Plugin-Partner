@@ -4,7 +4,7 @@
     "Youtubeurs":{
       "icon":"youtube",
       "index": "9",
-      "route":"#"
+      "route":"/admin/partners"
     }
   },
   "author":"Snkh",

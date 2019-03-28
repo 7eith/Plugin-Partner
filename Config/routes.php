@@ -9,3 +9,5 @@
  * Under private Copyright, all rights reserved to Snkh.
  *
  **************************************************************************** */
+
+Router::connect('/admin/partners', array('controller' => 'Partner', 'action' => 'index', 'plugin' => 'Partner', 'admin' => true));
