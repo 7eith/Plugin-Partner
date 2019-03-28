@@ -23,6 +23,7 @@ class PartnerAppSchema extends CakeSchema {
     public $partner__requests = array(
         'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 20, 'unsigned' => false, 'key' => 'primary'),
         'user_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
+        'subs' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
         'link' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
         'description' => array('type' => 'text', 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
         'response' => array('type' => 'boolean', 'null' => false, 'default' => 0),
