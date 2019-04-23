@@ -1,3 +1,15 @@
+<?php
+/* **************************************************************************** *
+ *
+ * admin_index.ctp
+ *
+ * by: Snkh <dev@snkh.me>
+ *
+ * Created: 29/03/2019 02:02 by Snkh
+ * Under private Copyright, all rights reserved to Snkh.
+ *
+ **************************************************************************** */
+?>
 <section class="content">
     <div class="row">
         <div class="col-md-12">
