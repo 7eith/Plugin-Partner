@@ -26,9 +26,8 @@ class PartnerAppSchema extends CakeSchema {
         'subs' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
         'link' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
         'description' => array('type' => 'text', 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
-        'response' => array('type' => 'boolean', 'null' => false, 'default' => 0),
-        'admin_response' => array('type' => 'text', 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
-        'created' => array('type' => 'datetime', 'null' => false, 'default' => null),
+        'response' => array('type' => 'boolean', 'null' => true, 'default' => null),
+        'created' => array('type' => 'datetime', 'null' => true, 'default' => null),
         'indexes' => array(
             'PRIMARY' => array('column' => 'id', 'unique' => 1)
         ),
