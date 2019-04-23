@@ -1,6 +1,29 @@
 {
-    "YOUTUBER_REQUEST": "Demande de grade YouTubeur",
-    "PARTNER_REQUEST_LINKS": "Lien de votre chaine YouTube",
-    "PARTNER_REQUEST_SUBS": "Nombre d'abonnés",
-    "PARTNER_REQUEST_TEXT": "Motivations"
+    "PARTNER__MODULE_TITLE": "Demande de Partenariat",
+    "PARTNER__CHANNEL_LINK": "Lien de votre chaine YouTube",
+    "PARTNER__SUBS_COUNT": "Nombre d'abonnés",
+    "PARTNER__DESCRIPTION": "Motivations",
+    "PARTNER__HAS_ALREADY_ASKED": "Vous avez déjà demander le Grade YouTubeur",
+    "PARTNER__REQUEST_OK": "Votre demande à été envoyer!",
+
+    "PARTNER__ERROR_NUMBER": "Ce n'est pas un nombre.",
+
+    "PARTNER__ADMIN_TITLE": "Liste des demandes de Partenariat",
+    "PARTNER__ADMIN_SUBS": "abonnés",
+    "PARTNER__ADMIN_CHANNEL_LINK": "Lien de la chaine YouTube",
+    
+    "PARTNER__ADMIN_SHOW_REQUEST": "Répondre",
+    "PARTNER__ADMIN_SHOW_CHANNEL": "Accedez a la chaine",
+
+    "PARTNER__ADMIN_ANSWER_TITLE": "Demande de Partneriat de",
+    "PARTNER__ACCEPT": "Accepter",
+    "PARTNER__REFUSE": "Refuser",
+
+    "PARTNER__ANSWERED_ACCEPT": "Vous avez accepter sa candidature!",
+    "PARTNER__ANSWERED_REFUSE": "Vous venez de refuser sa candidature!",
+
+    "PARTNER__NOTIFICATION_ACCEPT": "Votre demande de Partenariat à été accepter!", 
+    "PARTNER__NOTIFICATION_REFUSE": "Votre demande de Partenariat à été refuser.",
+
+    "PARTNER__AUTHOR": "Snkh <iamsnkh@protonmail.com>"
 }
