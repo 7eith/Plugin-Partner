@@ -12,36 +12,46 @@
 ?>
 <div class="panel panel-default">
     <div class="panel-heading" id="panel-head">
-        <span class="white"><?= $Lang->get("YOUTUBER_REQUEST") ?></span>
+        <span class="white"><?= $Lang->get("PARTNER__MODULE_TITLE") ?></span>
     </div>
     
     <div class="panel-body" style="padding: 30px 20px;">
-            <form method="post" data-ajax="true" action="">
-                <div class="row">
-                    <div class="form-group">
-                        <label><?= $Lang->get("PARTNER_REQUEST_LINKS") ?></label>
-                        <input type="text" class="form-control" name="links">
-                    </div>
-
-                    <br />
-
-                    <div class="form-group">
-                        <label><?= $Lang->get("PARTNER_REQUEST_SUBS") ?></label>
-                        <input type="text" class="form-control" name="subs">
-                    </div>
-
-                    <br />
-                    
-                    <div class="form-group">
-                        <label><?= $Lang->get("PARTNER_REQUEST_TEXT") ?></label>
-                        <textarea class="form-control" rows="3" name="text"></textarea>
-                    </div>
+        <form method="post" data-ajax="true" action="<?= $this->Html->url(array('controller' => 'partner', 'action' => 'create')) ?>">
+            <div class="row" style="padding-left: 20px;">
+                <div class="form-group">
+                    <label><?= $Lang->get("PARTNER__CHANNEL_LINK") ?></label>
+                    <input type="text" class="form-control" name="link">
                 </div>
 
-                <div class="text-right">
-                <button type="submit" class="btn btn-primary btn-large">Envoyer</button>
+                <br />
+
+                <div class="form-group">
+                    <label><?= $Lang->get("PARTNER__SUBS_COUNT") ?></label>
+                    <input type="text" class="form-control" name="subs">
                 </div>
 
-            </form>
+                <br />
+                
+                <div class="form-group">
+                <label><?= $Lang->get("PARTNER__DESCRIPTION") ?></label>
+                    <?= $this->Html->script('admin/tinymce/tinymce.min.js') ?>
+                    <script type="text/javascript">
+                        tinymce.init({
+                            selector: "textarea",
+                            height : 300,
+                            width : '100%',
+                            language : 'fr_FR',
+                            plugins: "code image link",
+                            toolbar: "fontselect fontsizeselect bold italic underline strikethrough link image forecolor backcolor alignleft aligncenter alignright alignjustify cut copy paste bullist numlist outdent indent blockquote code"
+                        });
+                    </script>
+                    <textarea id="editor" name="description" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+            <div class="text-right">
+                <button type="submit" class="btn btn-primary btn-large"><?= $Lang->get('GLOBAL__SUBMIT') ?></button>
+            </div>
+        </form>
     </div>
 </div>
