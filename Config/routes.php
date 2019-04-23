@@ -10,4 +10,13 @@
  *
  **************************************************************************** */
 
-Router::connect('/admin/partners', array('controller' => 'Partner', 'action' => 'index', 'plugin' => 'Partner', 'admin' => true));
+Router::connect('/partner/create',           array('controller' => 'partner', 'action' => 'create', 'plugin' => 'partner'));
+
+/** 
+ * Admin 
+ */
+
+Router::connect('/admin/partner',            array('controller' => 'partner', 'action' => 'index',  'plugin' => 'partner', 'admin' => true));
+Router::connect('/admin/partner/answer/:id', array('controller' => 'partner', 'action' => 'answer', 'plugin' => 'partner', 'admin' => true));
+Router::connect('/admin/partner/accept/:id', array('controller' => 'partner', 'action' => 'accept', 'plugin' => 'partner', 'admin' => true));
+Router::connect('/admin/partner/refuse/:id', array('controller' => 'partner', 'action' => 'refuse', 'plugin' => 'partner', 'admin' => true));
