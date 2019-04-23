@@ -3,8 +3,8 @@
   "admin_menus":{
     "Youtubeurs":{
       "icon":"youtube",
-      "index": "9",
-      "route":"/admin/partners"
+      "index": "8",
+      "route":"/admin/partner"
     }
   },
   "author":"Snkh",
