@@ -2,9 +2,18 @@
   "name":"Partner",
   "admin_menus":{
     "Youtubeurs":{
-      "icon":"youtube",
       "index": "8",
-      "route":"/admin/partner"
+      "icon":"youtube",
+      "menu": {
+        "Général": {
+          "icon": "home",
+          "route":"/admin/partner"
+        },
+        "Historique": {
+          "icon": "table",
+          "route":"/admin/partner/history"
+        }
+      }
     }
   },
   "author":"Snkh",

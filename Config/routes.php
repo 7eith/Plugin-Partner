@@ -17,6 +17,7 @@ Router::connect('/partner/create',           array('controller' => 'partner', 'a
  */
 
 Router::connect('/admin/partner',            array('controller' => 'partner', 'action' => 'index',  'plugin' => 'partner', 'admin' => true));
+Router::connect('/admin/partner/history',    array('controller' => 'partner', 'action' => 'history',  'plugin' => 'partner', 'admin' => true));
 Router::connect('/admin/partner/answer/:id', array('controller' => 'partner', 'action' => 'answer', 'plugin' => 'partner', 'admin' => true));
 Router::connect('/admin/partner/accept/:id', array('controller' => 'partner', 'action' => 'accept', 'plugin' => 'partner', 'admin' => true));
 Router::connect('/admin/partner/refuse/:id', array('controller' => 'partner', 'action' => 'refuse', 'plugin' => 'partner', 'admin' => true));

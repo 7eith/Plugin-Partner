@@ -52,11 +52,37 @@
 
     public function admin_index(){
         $this->layout = 'admin';
-        $this->set('title_for_layout', 'Partner');
+        $this->set('title_for_layout', $this->Lang->get('PARTNER__LAYOUT_HOME'));
         $this->loadModel('Partner.PartnerRequest');
 
         $usersToFind = array();
         $partnerRequests = $this->PartnerRequest->find('all', array('conditions' => array('response' => null)));
+        
+        foreach ($partnerRequests as $key => $value) {
+            $usersToFind[] = $value['PartnerRequest']['user_id'];
+        }
+
+        $usersByID = array();
+        $findUsers = $this->User->find('all', array('conditions' => array('id' => $usersToFind)));
+        foreach ($findUsers as $key => $value) {
+            $usersByID[$value['User']['id']] = $value['User']['pseudo'];
+        }
+        
+        $this->set(compact('partnerRequests', 'usersByID'));
+    }
+
+    /** 
+     * History
+     */
+
+    public function admin_history(){
+        $this->layout = 'admin';
+        $this->set('title_for_layout', $this->Lang->get('PARTNER__LAYOUT_HISTORY'));
+        $this->loadModel('Partner.PartnerRequest');
+
+        $usersToFind = array();
+        $partnerRequests = $this->PartnerRequest->find('all', array('conditions' => array('response !=' => null)));
+
         foreach ($partnerRequests as $key => $value) {
             $usersToFind[] = $value['PartnerRequest']['user_id'];
         }
@@ -72,7 +98,7 @@
 
     public function admin_answer() { 
         $this->layout = 'admin';
-        $this->set('title_for_layout', 'Partner');
+        $this->set('title_for_layout', $this->Lang->get('PARTNER__LAYOUT_ANSWER'));
         $this->loadModel('Partner.PartnerRequest');
 
         if (isset($this->request->params['id'])) {

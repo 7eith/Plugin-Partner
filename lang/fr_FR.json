@@ -15,7 +15,7 @@
     "PARTNER__ADMIN_SHOW_REQUEST": "Répondre",
     "PARTNER__ADMIN_SHOW_CHANNEL": "Accedez a la chaine",
 
-    "PARTNER__ADMIN_ANSWER_TITLE": "Demande de Partneriat de",
+    "PARTNER__ADMIN_ANSWER_TITLE": "Demande de Partenariat de",
     "PARTNER__ACCEPT": "Accepter",
     "PARTNER__REFUSE": "Refuser",
 
@@ -24,6 +24,16 @@
 
     "PARTNER__NOTIFICATION_ACCEPT": "Votre demande de Partenariat à été accepter!", 
     "PARTNER__NOTIFICATION_REFUSE": "Votre demande de Partenariat à été refuser.",
+
+    "PARTNER__ADMIN_HISTORY_TITLE": "Historique des demandes de Partenariat",
+    "PARTNER__ADMIN_RESPONSE": "Réponse",
+    "PARTNER__ADMIN_SEE_REQUEST": "Voir la candidature",
+
+    "PARTNER__LAYOUT_HOME": "Partner - Accueil",
+    "PARTNER__LAYOUT_ANSWER": "Partner - Répondre",
+    "PARTNER__LAYOUT_HISTORY": "Partner - Historique",
+
+
 
     "PARTNER__AUTHOR": "Snkh <iamsnkh@protonmail.com>"
 }
