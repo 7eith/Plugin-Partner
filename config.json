@@ -2,7 +2,7 @@
   "name":"Partner",
   "admin_menus":{
     "Youtubeurs":{
-      "index": "8",
+      "index": "7",
       "icon":"youtube",
       "menu": {
         "Général": {
@@ -17,7 +17,7 @@
     }
   },
   "author":"Snkh",
-  "version":"1.0.1",
+  "version":"1.0.2",
   "useEvents":false,
   "permissions" : {
     "available" : [],
