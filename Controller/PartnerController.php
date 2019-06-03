@@ -25,11 +25,14 @@
         $this->loadModel('Partner.PartnerRequest');
         $this->response->type('json');
         $this->autoRender = false;
+        
+        $date1WeekAgo = date("Y-m-d", strtotime("-1 week")); 
 
         // has already try 
-        if($this->PartnerRequest->find('count', ['conditions' => ['user_id' => $this->User->getKey('id')]]) != 0) 
+        if($this->PartnerRequest->find('count', ['conditions' => ['user_id' => $this->User->getKey('id'), 'AND' => [['created >' => $date1WeekAgo]]]]) != 0) {
             return $this->response->body(json_encode(array('statut' => false, 'msg' => $this->Lang->get('PARTNER__HAS_ALREADY_ASKED'))));
-        
+        }
+            
         if (!empty($this->request->data['link']) AND !empty($this->request->data['subs']) AND !empty($this->request->data['description'])) {
 
             if(!is_numeric($this->request->data['subs'])) 
